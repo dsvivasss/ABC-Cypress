@@ -1,0 +1,9 @@
+node_modules
+package.json
+cypress/videos/*
+cypress/screenshots_*
+log.txt
+status.log
+dashboard/data/*
+dashboard/reports/*
+reports/*
