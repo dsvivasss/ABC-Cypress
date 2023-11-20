@@ -34,3 +34,32 @@ Feature: Project Features
 		And I fill project description with "Project description"
 		And I click on create project button
 		Then I should see "Project name"
+
+	@clear @focus
+	Scenario: Create interview for candidate succesfully
+		Given I login succesfully
+		When I click on first project
+		And I click on first candidate
+		And I click on select
+		And I click on first candidate
+		And I click on create interview
+		And I click on confirm interview
+		Then I should see interviews
+
+	@clear @focus
+	Scenario: Create test succesfully
+		Given I login succesfully
+		When I click on first project
+		And I click on create test
+		And I fill test name with "Test name"
+		And I click on confirm test
+		Then I should see a toast message
+
+	@clear @focus
+	Scenario: Assign candidate succesfully
+		Given I login succesfully
+		When I click on first project
+		And I click on first candidate
+		And I click on select
+		And I click on assing candidate
+		Then I should see assigned candidates

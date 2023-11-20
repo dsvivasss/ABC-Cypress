@@ -50,6 +50,45 @@ When('I click on create project button', () => {
     fn.clickButtonCreateProject()
 })
 
+When('I click on create interview', () => {
+    fn.clickButtonCreateInterview()
+})
+
+When('I click on confirm interview', () => {
+    cy.wait(5000);
+    fn.clickButtonConfirmInterview()
+})
+
+When('I click on create test', () => {
+    fn.clickButtonCreateNewTest()
+})
+
+When('I fill test name with {string}', (title) => {
+    fn.inputTestTitle(title)
+})
+
+When('I click on confirm test', () => {
+    fn.clickButtonConfirmTest()
+})
+
+When('I click on assing candidate', () => {
+    cy.wait(5000);
+    fn.clickButtonAssign()
+})
+
 Then('I should see selected candidates', () => {
     fn.lengthSelectedCandidate()
+})
+
+Then('I should see assigned candidates', () => {
+    cy.wait(5000);
+    fn.lengthAssignedCandidate()
+})
+
+Then('I should see interviews', () => {
+    fn.lengthInterviews()
+})
+
+Then('I should see a toast message', () => {
+    fn.checkToastIsVisible()
 })
