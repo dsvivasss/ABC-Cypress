@@ -14,6 +14,12 @@ export function prepare() {
     clickLog_in();
 }
 
+export function prepare_user() {
+    cy.visit(Cypress.env("login_url_user"));
+    typeCredentials("daniel@correo.com", "nacional");
+    clickLog_in();
+}
+
 export function typeCredentials(user, pass) {
     cy.get(selUser).type(user);
     cy.get(selPass).type(pass);

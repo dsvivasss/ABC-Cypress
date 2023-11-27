@@ -4,6 +4,7 @@ module.exports = defineConfig({
 	env: {
 		qa_url: 'http://localhost:3000',
 		login_url: 'http://localhost:3000/company_login',
+		login_url_user: 'http://localhost:3000/candidate_login',
 		projects_url: 'http://localhost:3000/project_list',
 	},
 	screenshotsFolder: 'cypress/screenshots_4-39',

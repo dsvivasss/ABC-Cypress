@@ -1,4 +1,5 @@
-const selFirstProject = '/html/body/div[2]/div[2]/div[2]/div[1]/div/div[2]/span[2]/button'
+const selFirstProject = '/html/body/div[2]/div[2]/div[2]/div[1]/div/div[2]/span/button'
+const selFirstProjectUser = '/html/body/div[2]/div[2]/div[2]/div[1]/div/div[2]/span/button'
 const selFirstCandidate = '/html/body/div[2]/div[2]/div/div/div[2]/div/table/tbody/tr[1]/td[3]/button'
 const selButtonSelect = '/html/body/div[2]/div[2]/div[2]/div/div[1]/button'
 const selTableSelectedCandidate = '/html/body/div[2]/div[2]/div/div/div[1]/div[3]/table'
@@ -17,6 +18,10 @@ const selTableAssignedCandidate = '/html/body/div[2]/div[2]/div/div/div[1]/div[2
 
 export function clickFirstProject() {
     cy.xpath(selFirstProject).click();
+}
+
+export function clickFirstProjectUser() {
+    cy.xpath(selFirstProjectUser).click();
 }
 
 export function clickFirstCandidate() {
